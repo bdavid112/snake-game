@@ -2,7 +2,7 @@ import { expandSnake, onSnake } from "./snake.js"
 import { getRandomGridPosition } from './grid.js'
 
 let position = getRandomApplePosition()
-let scoreText = document.getElementById('score-text')
+let scoreText = document.querySelectorAll('.score-text')
 let score = 0
 const EXPANSION_RATE = 1
 
@@ -33,5 +33,8 @@ function getRandomApplePosition() {
 
 function addScore(value) {
   score += value
-  scoreText.innerHTML = 'Score: ' + score
+  scoreText.forEach(text => {
+    text.innerHTML = 'Score: ' + score
+  })
+
 }

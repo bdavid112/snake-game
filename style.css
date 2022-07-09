@@ -17,6 +17,47 @@ body {
   grid-template-rows: repeat(21, 1fr);
 }
 
+#game-over-menu {
+  position: absolute;
+  height: fit-content;
+  width: 50vmin;
+  background-color: black;
+  border: 2px solid white;
+  display: none;
+}
+
+#game-over-menu p {
+  width: auto;
+  text-align: center;
+  font-size: xx-large;
+  color: white;
+}
+
+.menu-buttons {
+  width: fit-content;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.btn {
+  transition: all linear 0.1s;
+  cursor: pointer;
+  width: fit-content;
+  font-size: x-large !important;
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black !important;
+}
+
+.btn:active {
+  background-color: black;
+  color: white !important;
+}
+
 .ui {
   height: 100vmin;
   width: 100vmin;
@@ -24,8 +65,10 @@ body {
   color: white;
 }
 
-#score-text {
+.score-text {
+  width: fit-content;
   margin: 1%;
+  background-color: black;
 }
 
 .snake {
