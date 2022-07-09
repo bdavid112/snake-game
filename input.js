@@ -5,7 +5,6 @@ window.addEventListener('keydown', function(e) {
       case 'ArrowUp':
         if (inputDirection.y !== 0) break
         inputDirection = { x: 0, y: -1 }
-        this.setTimeout(100)
         break
       case 'ArrowDown':
         if (inputDirection.y !== 0) break

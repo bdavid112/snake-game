@@ -26,7 +26,6 @@ function getRandomApplePosition() {
   let newPosition
   while (newPosition == null || onSnake(newPosition)) {
     newPosition = getRandomGridPosition()
-    console.log(newPosition)
   }
   return newPosition
 }
